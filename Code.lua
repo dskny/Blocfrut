@@ -23,6 +23,6 @@ if Found == true then
     for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.Dialogue.Option1.Mouse1ButtonClick)) do
         v:Fire()
     end
-else
+elseif Found == false then
     Teleport()
 end
