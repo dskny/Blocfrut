@@ -25,5 +25,5 @@ if Found == true then
         v:Fire()
     end
 elseif Found == false then
-    --Teleport()
+    Teleport()
 end
