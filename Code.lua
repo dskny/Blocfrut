@@ -14,7 +14,6 @@ local function IsFruitFound(Name)
   end
   return false
 end
-local FruitWanted = "Ice Fruit";
 local Found = IsFruitFound(FruitWanted)
 if Found == true then
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")[FruitWanted].Handle.CFrame
