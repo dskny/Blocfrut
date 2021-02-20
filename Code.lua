@@ -14,15 +14,16 @@ local function IsFruitFound(Name)
   end
   return false
 end
-local FruitWanted;
+local FruitWanted = "Ice Fruit";
 local Found = IsFruitFound(FruitWanted)
 if Found == true then
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")[FruitWanted].Handle.CFrame
     wait(1.5)
     game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
-    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.Dialogue.Option1.Mouse1ButtonClick)) do
+    wait(1)
+    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.Dialogue.Option1.MouseButton1Click)) do
         v:Fire()
     end
 elseif Found == false then
-    Teleport()
+    --Teleport()
 end
