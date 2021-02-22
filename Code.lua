@@ -1,5 +1,4 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/dskny/Blocfrut/main/TP'))()
-game:GetService("Players").LocalPlayer["PlayerGui"].Main:WaitForChild("ChooseTeam")
 local function IsFruitFound(Name)
   for _,v in next, game:GetService("Workspace"):GetChildren() do
     if v:IsA("Tool") and v.Name == Name then
